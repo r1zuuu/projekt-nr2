@@ -5,12 +5,15 @@
   --color-brand-2: rgb(41, 41, 231);
   --color-brand-3: rgb(235, 235, 235);
   --color-brand-4: rgb(39, 39, 39);
+  --color-brand-5: rgb(69, 69, 245);
 }
+
 body {
   margin: 0;
 }
+
 .navbar {
-  display: grid;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: var(--font-family-2);
@@ -22,48 +25,101 @@ body {
   left: 0;
   align-items: center;
 }
-div.up {
-  display: flex;
-  margin-bottom: 300px;
-  flex-direction: column;
-}
+
 .logo {
   display: flex;
   margin-left: 30px;
-}
-.icon {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 0px;
+  align-items: center;
 }
 
-.icon > img {
-  width: 40px;
-  height: 40px;
+.logo img {
+  margin-right: 10px;
 }
 
 .nav {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.icon {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-style: none;
+  border-radius: 5px;
+}
+.icon:hover {
+  background-color: var(--color-brand-5);
+  transition: background-color 0.5s ease;
+}
+
+.icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.userbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 7px;
+  top: 10px;
+  font-family: var(--font-family-2);
+}
+
+.userbar img {
+  max-height: 30px;
+  max-height: 30px;
+  margin-right: 5px;
+}
+
 .main {
   list-style-type: none;
 }
-.main .jake {
+
+.main .userbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 7px;
+  top: 10px;
   font-family: var(--font-family-2);
+}
+
+.main .userbar img {
+  max-height: 30px;
+  max-height: 30px;
+  margin-right: 5px;
+}
+
+.main .jake,
+.main .Help,
+.main .searchbar,
+.main .category,
+.main .options,
+.main .nextbutton {
+  font-family: var(--font-family-2);
+}
+
+.main .jake {
   position: absolute;
   top: 10%;
   left: 25%;
   font-size: 30px;
 }
+
 .main .Help {
-  font-family: var(--font-family-2);
   position: absolute;
   top: 20%;
   left: 25%;
   font-size: 20px;
 }
+
 .main .searchbar {
-  position: relative;
+  position: absolute;
   display: flex;
   min-width: 100px;
   width: 200px;
@@ -72,18 +128,17 @@ div.up {
   border: 1px solid #ccc;
   border-radius: 4px;
   border: none;
-  font-family: var(--font-family-2);
-  position: absolute;
   left: 25%;
   top: 25%;
 }
+
 .main .category {
   position: absolute;
-  font-family: var(--font-family-2);
   left: 25%;
   top: 35%;
 }
-.options {
+
+.main .options {
   display: flex;
   position: absolute;
   color: var(--color-brand-3);
@@ -95,13 +150,15 @@ div.up {
   color: var(--color-brand-4);
   font-family: var(--font-family-1);
 }
-.option:hover {
+
+.main .option:hover {
   color: var(--color-brand-3);
   background-color: var(--color-brand-2);
   transition: background-color 0.5s ease;
   border-style: none;
 }
-.option {
+
+.main .option {
   display: flex;
   border: solid 0.5px rgb(219, 219, 217);
   border-radius: 5px;
@@ -113,11 +170,12 @@ div.up {
   cursor: pointer;
 }
 
-.option > img {
+.main .option img {
   height: 150px;
   width: 150px;
 }
-.nextbutton {
+
+.main .nextbutton {
   display: flex;
   border: 1px solid black;
   border-style: none;
@@ -125,13 +183,25 @@ div.up {
   position: absolute;
   padding: 10px;
   border-radius: 7px;
-  font-family: var(--font-family-1);
   color: white;
   right: 13%;
   bottom: 12%;
+  cursor: pointer;
 }
-.nextbutton:hover {
+
+.main .nextbutton:hover {
   background-color: var(--color-brand-4);
   color: var(--color-brand-3);
   transition: background-color 0.5s ease;
+}
+
+.main .userbar img {
+  display: flex;
+  top: 0px;
+  max-height: 30px;
+  max-height: 30px;
+}
+
+.main .userbar li {
+  list-style: none;
 }
