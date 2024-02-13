@@ -91,7 +91,7 @@ div.up {
   bottom: 23%;
   max-width: 30%;
   max-height: 30%;
-  gap: 60px;
+  gap: 30px;
   color: var(--color-brand-4);
   font-family: var(--font-family-1);
 }
@@ -103,8 +103,8 @@ div.up {
 }
 .option {
   display: flex;
-  border: solid 0.5px black;
-  border-radius: 10px;
+  border: solid 0.5px rgb(219, 219, 217);
+  border-radius: 5px;
   justify-content: center;
   padding: 10px;
   flex-direction: column;
@@ -129,5 +129,9 @@ div.up {
   color: white;
   right: 11%;
   bottom: 14%;
-  cursor: pointer;
+}
+.nextbutton:hover {
+  background-color: var(--color-brand-4);
+  color: var(--color-brand-3);
+  transition: background-color 0.5s ease;
 }
