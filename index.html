@@ -2,74 +2,88 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/7.0.0/normalize.css "
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <div class="main">
-      <div class="userbar">
-        <img src="photo/OMNOM.webp" alt="Profile picture" />
-        <li class="username">
-          Jack Daniels <span class="checkmark">&#10004;</span>
-        </li>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="material-symbols-outlined"> sports_soccer </span>
       </div>
-      <li class="jake">Welcome to Pulse, Jake</li>
-      <li class="Help">What do you need help with</li>
-      <div class="searchbar">
-        <input type="text" placeholder="Ex. smart contracts" />
-      </div>
-      <li class="category">Please select a category</li>
-      <div class="options">
-        <div class="option">
-          <img src="photo/undraw_pilates_ltw9.svg" alt="Photo" />
-          <li>Technical Services</li>
+      <div class="menu">
+        <div class="icon">
+          <span class="material-symbols-outlined ikona"> search </span>
+          <span>Find</span>
         </div>
-        <div class="option">
-          <img src="photo/undraw_running_wild_h6ao.svg" alt="Photo" />
-          <li>Marketing Services</li>
+        <div class="icon">
+          <span class="material-symbols-outlined ikona"> pan_tool </span>
+          <span>My Intents</span>
         </div>
-        <div class="option">
-          <img src="photo/undraw_scientist_ft0o.svg" alt="Photo" />
-          <li>Legal Services</li>
-        </div>
-        <div class="option">
-          <img src="photo/undraw_traveling_yhxq.svg" alt="Photo" />
-          <li>Advisory Services</li>
+        <div class="icon">
+          <span class="material-symbols-outlined ikona"> wallet </span>
+          <span>Wallet</span>
         </div>
       </div>
-      <div class="nextbutton"><li>Next</li></div>
-    </div>
-
-    <div class="navbar">
-      <div class="logo"><img src="photo/football.svg" alt="" /></div>
-      <ul class="nav">
-        <div class="up">
-          <div class="icon">
-            <img src="photo/search.svg" alt="Find icon" />
-            <li>Find</li>
+      <div class="other">
+        <div class="icon">
+          <span class="material-symbols-outlined ikona"> thumb_up </span>
+          <span>Give feedback</span>
+        </div>
+        <div class="icon">
+          <span class="material-symbols-outlined ikona"> info </span>
+          <span>Learn more</span>
+        </div>
+        <div class="icon">
+          <span class="material-symbols-outlined ikona"> settings </span>
+          <span>Settings</span>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="content">
+        <div class="userbar">
+          <span class="material-symbols-outlined"> account_circle </span>
+          <span class="Jack">Jack Daniels </span>
+        </div>
+        <div class="poland">
+          <header class="jack">Welcome to Pulse, Jack</header>
+          <span class="help">What do you need help with?</span>
+          <div class="wrapper">
+            <div class="searchbar">
+              <span class="material-symbols-outlined loop"> search </span>
+              <input type="text" placeholder="Ex. smart contracts" />
+            </div>
           </div>
-          <div class="icon">
-            <img src="photo/wallet.svg" alt="Wallet icon" />
-            <li>Wallet</li>
+          <span class="category">Please select a category</span>
+        </div>
+        <div class="options">
+          <div class="option">
+            <img src="photo/undraw_pilates_ltw9.svg" alt="Photo" />
+            <span>Technical Services</span>
           </div>
-          <div class="icon">
-            <img src="photo/slash-square-fill.svg" alt="Stop icon" />
-            <li>My Intents</li>
+          <div class="option">
+            <img src="photo/undraw_running_wild_h6ao.svg" alt="Photo" />
+            <span>Marketing Services</span>
+          </div>
+          <div class="option">
+            <img src="photo/undraw_scientist_ft0o.svg" alt="Photo" />
+            <span>Legal Services</span>
+          </div>
+          <div class="option">
+            <img src="photo/undraw_traveling_yhxq.svg" alt="Photo" />
+            <span>Advisory Services</span>
           </div>
         </div>
-        <div class="down">
-          <div class="icon">
-            <img src="photo/hand-thumbs-up-fill.svg" alt="Like icon" />
-            <li>Give feedback</li>
-          </div>
-          <div class="icon">
-            <img src="photo/info-circle.svg" alt="Info icon" />
-            <li>Learn more</li>
-          </div>
-          <div class="icon">
-            <img src="photo/gear-wide-connected.svg" alt="Settings icon" />
-            <li>Settings</li>
-          </div>
+        <div class="nextbutton">
+          <span class="next">Next</span>
         </div>
-      </ul>
-    </div>
+      </div>
+    </main>
   </body>
 </html>

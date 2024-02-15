@@ -1,70 +1,153 @@
 :root {
   --font-family-1: sans-serif;
   --font-family-2: "Poppins", sans-serif;
-  --color-brand-1: rgb(33, 33, 125);
-  --color-brand-2: rgb(41, 41, 231);
+  --color-brand-1: rgb(30, 30, 100);
+  --color-brand-2: rgb(58, 73, 214);
   --color-brand-3: rgb(235, 235, 235);
   --color-brand-4: rgb(39, 39, 39);
-  --color-brand-5: rgb(69, 69, 245);
+  --color-brand-5: rgb(81, 81, 245);
 }
 
 body {
   margin: 0;
+  display: flex;
+  font-family: var(--font-family-2);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
 }
 
 .navbar {
+  height: 100vh;
+  padding-left: 5vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  font-family: var(--font-family-2);
-  list-style: none;
-  width: 15%;
-  height: 100vh;
+  top: 0;
+  left: 0;
+  gap: 1vh;
+  flex: 1 1;
+  width: 17vw;
+  position: sticky;
   background-color: var(--color-brand-1);
   color: var(--color-brand-3);
-  box-sizing: border-box;
   font-size: 1.5rem;
-  left: 0;
-  align-items: center;
+  cursor: pointer;
 }
 
-div.up {
+.other {
   position: absolute;
-  top: 10vh;
-  left: 5vh;
-}
-
-div.down {
-  position: absolute;
-  bottom: 10vh;
-  left: 5vh;
+  bottom: 100px;
 }
 
 .logo {
   display: flex;
+  justify-content: center;
   max-width: 5vh;
+  align-items: center;
   max-height: 5vh;
+  margin-right: 15vh;
+  margin-top: 3vh;
+  scale: 1.8;
+  color: #acacac;
+}
+.material-symbols-outlined {
+  display: flex;
+}
+.userbar {
+  display: flex;
+  justify-content: flex-end;
+  font-family: var(--font-family-2);
+  padding: 2vh;
+}
+.userbar .Jack {
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3vh;
+  font-size: 1.2rem;
+}
+.userbar .material-symbols-outlined {
+  margin-right: 0.7vh;
 }
 
 .logo img {
-  margin-right: 2px;
+  margin-right: 1.1vh;
 }
-
-.nav {
+.jack {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.help {
+  display: flex;
   list-style-type: none;
+  font-weight: 550;
+}
+.category {
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+  font-weight: 550;
+}
+div.poland {
+  margin-top: 10vh;
+  gap: 2vh;
+  font-family: var(--font-family-2);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+div.wrapper {
+  display: flex;
+  border: 1px rgb(223, 222, 222) solid;
+  border-radius: 4px;
+  width: 20vw;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.searchbar > img {
+  display: flex;
+  width: 1vw;
+  height: 2vh;
+  margin-left: 10px;
+}
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
+input {
+  width: 17vw;
+  height: 5vh;
+  border-style: none;
+}
+
+::placeholder {
+  color: rgb(223, 222, 222);
+  opacity: 1;
+}
+
+.loop {
+  margin-left: 1vw;
+  opacity: 1;
+  color: rgb(223, 222, 222);
+}
+
+input:focus {
+  outline: none;
+}
 .icon {
   display: flex;
-  padding: 7px;
+  padding: 1vh;
   border: 1px solid black;
   border-style: none;
   border-radius: 5px;
+  gap: 1.2vw;
+}
+
+.ikona {
+  color: #acacac;
+  scale: 1.4;
 }
 
 .icon:hover {
@@ -78,172 +161,69 @@ div.down {
   margin-right: 2vh;
 }
 
-.userbar {
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+}
+
+.options {
   display: flex;
   align-items: center;
-  position: absolute;
-  right: 7px;
-  top: 10px;
-  font-family: var(--font-family-2);
+  flex-direction: row;
+  gap: 2vw;
+  flex: 1 1;
+  box-sizing: border-box;
+  width: 70vw;
 }
 
-.userbar img {
-  max-height: 6.5vh;
-  max-height: 6.5vh;
-  margin-right: 1vh;
-}
-
-.main {
-  list-style-type: none;
-}
-
-.main .userbar {
+.option {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: absolute;
-  right: 7px;
-  top: 10px;
-  font-family: var(--font-family-2);
+  height: 45vh;
+  width: 15vw;
+  gap: 3vh;
+  color: black;
+  font-weight: 550;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: background-color 0.5s ease;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-.main .userbar img {
-  max-height: 6.5vh;
-  max-height: 6.5vh;
-  margin-right: 1vh;
-}
-
-.main .jake,
-.main .Help,
-.main .searchbar,
-.main .category,
-.main .options,
-.main .nextbutton {
-  font-family: var(--font-family-2);
-}
-
-.main .jake {
-  position: absolute;
-  top: 10%;
-  left: 25%;
-  font-size: 4.6vh;
-}
-
-.main .Help {
-  position: absolute;
-  top: 20%;
-  left: 25%;
-  font-size: 3vh;
-}
-
-.main .searchbar {
-  position: absolute;
-  display: flex;
-  min-width: 100px;
-  width: 30vh;
-  height: 2vw;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border: none;
-  left: 25%;
-  top: 27%;
-}
-
-.main .category {
-  position: absolute;
-  left: 25%;
-  top: 35%;
-}
-
-.main .options {
-  display: flex;
-  position: absolute;
-  color: var(--color-brand-3);
-  left: 25%;
-  bottom: 23%;
-  max-width: 30%;
-  max-height: 30%;
-  gap: 2.5vw;
-  color: var(--color-brand-4);
-  font-family: var(--font-family-1);
-}
-
-.main .option:hover {
+.option:hover {
   color: var(--color-brand-3);
   background-color: var(--color-brand-2);
   transition: background-color 0.5s ease;
   border-style: none;
-  scale: 1.1;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
-.main .option {
-  display: flex;
-  border: solid 0.5px rgb(219, 219, 217);
-  border-radius: 5px;
-  justify-content: center;
-  padding: 10px;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
+.option img {
+  height: 15vh;
+  width: 15vw;
 }
 
-.main .option img {
-  height: 50vw;
-  width: 13vw;
-}
-
-.main .nextbutton {
+.nextbutton {
   display: flex;
   border: 1px solid black;
   border-style: none;
   background-color: var(--color-brand-2);
-  position: absolute;
   padding: 10px;
   border-radius: 7px;
   color: white;
-  right: 11%;
   font-size: 1.3rem;
-  bottom: 12%;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   height: 3vh;
   width: 5vh;
   justify-content: center;
   align-items: center;
+  margin-top: 3vh;
 }
-
-.main .nextbutton:hover {
+.nextbutton:hover {
+  scale: 1.1;
   background-color: var(--color-brand-4);
-  color: var(--color-brand-3);
-  transition: background-color 0.5s ease;
-  scale: 1.2;
-  transform: scale(1.1);
-}
-
-.main .userbar img {
-  display: flex;
-  top: 0px;
-  max-height: 4vw;
-  max-height: 4vh;
-}
-
-.main .userbar li {
-  list-style: none;
-}
-
-@media screen and (max-width: 1450px) {
-  div.icon > li {
-    display: none;
-  }
-  .nextbutton {
-    display: flex;
-    height: 2vh;
-    width: 5vw;
-    padding: 10px;
-    align-items: center;
-    align-content: center;
-  }
 }
