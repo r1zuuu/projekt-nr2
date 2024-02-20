@@ -158,7 +158,8 @@ input:focus {
 
 .icon:hover {
   background-color: var(--color-brand-5);
-  transition: background-color 0.5s ease;
+  transition: all 0.5s ease-in-out;
+  scale: 1.05;
 }
 
 .icon img {
@@ -202,7 +203,7 @@ input:focus {
 .option:hover {
   color: var(--color-brand-3);
   background-color: var(--color-brand-2);
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-style: none;
   transform: scale(1.05);
 }
@@ -235,4 +236,80 @@ input:focus {
 .nextbutton:hover {
   scale: 1.1;
   background-color: var(--color-brand-4);
+}
+@media screen and (min-width: 2560px) {
+  .navbar {
+    font-size: 2.5rem;
+  }
+  main {
+    font-size: 2.5rem;
+  }
+  .option > span {
+    text-align: center;
+  }
+  .userbar > .Jack {
+    font-size: 2rem;
+  }
+  .userbar > .material-symbols-outlined {
+    align-items: center;
+  }
+  .nextbutton > span {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 430px) {
+  .jack {
+    font-size: 2.5rem;
+    margin-bottom: .8vh;
+  }
+  .help {
+    font-size: 1.5rem;
+  }
+  .category {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+  }
+  .Jack {
+    font-size: 1.5rem;
+  }
+  .option > img{
+    scale: 1.5;
+  }
+  .option > span {
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+  }
+  .options{
+    flex-direction: column;
+  }
+  .option {
+    height: 31vw;
+    width: 35vw;
+  }
+  .wrapper {
+    margin-top: 2vh;
+  }
+  .searchbar > span {
+    font-size: 2.5rem;
+  }
+  .searchbar > input {
+    font-size: 1rem;
+  }
+  .searchbar {
+    width: 30vh;
+  }
+  div.poland{
+    margin-top: 1vh;
+  }
+  .nextbutton{
+    margin-bottom: 2.6vh;
+  }
+}
+@media screen and (min-width: 810px;) {
+  .options{
+    width: 63vw;
+  }
 }
