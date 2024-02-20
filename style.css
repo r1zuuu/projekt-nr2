@@ -310,6 +310,6 @@ input:focus {
 }
 @media screen and (min-width: 810px;) {
   .options{
-    width: 63vw;
+    width: 62vw;
   }
 }
