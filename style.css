@@ -198,6 +198,7 @@ input:focus {
   transition: background-color 0.5s ease;
   border-radius: 15px;
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
 .option:hover {
@@ -257,10 +258,10 @@ input:focus {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 430px) {
   .jack {
     font-size: 2.5rem;
-    margin-bottom: .8vh;
+    margin-bottom: 0.8vh;
   }
   .help {
     font-size: 1.5rem;
@@ -272,7 +273,7 @@ input:focus {
   .Jack {
     font-size: 1.5rem;
   }
-  .option > img{
+  .option > img {
     scale: 1.5;
   }
   .option > span {
@@ -282,7 +283,7 @@ input:focus {
     justify-content: center;
     margin-top: 1vh;
   }
-  .options{
+  .options {
     flex-direction: column;
   }
   .option {
@@ -301,15 +302,15 @@ input:focus {
   .searchbar {
     width: 30vh;
   }
-  div.poland{
+  div.poland {
     margin-top: 1vh;
   }
-  .nextbutton{
+  .nextbutton {
     margin-bottom: 2.6vh;
   }
 }
-@media screen and (min-width: 810px;) {
-  .options{
+@media screen and (max-width: 810px) {
+  .options {
     width: 62vw;
   }
 }
