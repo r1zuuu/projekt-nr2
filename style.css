@@ -278,8 +278,8 @@ input:focus {
   }
   .option > span {
     font-size: 1.5rem;
-    text-align: center;
-    align-items: center;
+    text-align: center ;
+    align-items: center ;
     justify-content: center;
     margin-top: 1vh;
   }
@@ -311,6 +311,6 @@ input:focus {
 }
 @media screen and (max-width: 810px) {
   .options {
-    width: 62vw;
+    width: 62vw ;
   }
 }
